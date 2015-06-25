@@ -53,4 +53,6 @@ var parent = createElement(
 
 -------
 
-In addition to `tagName`, `assignTo` and `children`, there are a few other properties that are treated as special. 
+`tagName`, `assignTo` and `children` are not the only properties that are treated as special.
+
+ - *``*
