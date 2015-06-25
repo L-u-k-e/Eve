@@ -56,4 +56,11 @@ var parent = createElement(
  - *`tagName [String]`*
   - This value is passed as an argument to the vanilla `document.createElement` function.
 
-- *``*
+- *`direct [Element]`*
+ - As an alternative to using the `tagName` property, you can pass in an existing element using this property. If both `direct` and `tagName` are present, then `tagName` will be ignored.
+
+- *`assignTo [String]`*
+ - As described in the previous section, if this key is utilized and an object is passed in as the second argument to the function, then a refernece to the element that gets created will be assigned as a property of the provided object whose name is the value of this key. 
+
+- *`attrs [2D array]`*
+ - If you need to assign an attribute to the element itself, rather than simply create/modify a property on the object wrapper, than pass the attribute information as an element of the `attrs` array. Use the name of the attribute as the first element of the nested array and use the intended value as the second. See [this stackoverflow question](http://stackoverflow.com/a/6004028/3581485) for a good explanation of the difference between attributs and properties. 
