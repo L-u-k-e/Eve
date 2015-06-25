@@ -28,11 +28,25 @@ Into this:
 var parent = createElement(
   { tagName: 'div', className: 'container', children: [
     { tagName: 'div', children: [
-      { tagName: 'button', textContent: 'Click Me'}
+      { tagName: 'button', textContent: 'Click Me' }
+    ]}
+  ]
+});
+
+```
+
+As you can see, the bottom solution is less pedantic and it is much easier to glean structural information with a quick glance at the code.
+
+
+The above example, does not demonstrate everything you can do with this function. As it stands in fact, the function appears to have one disadvantage, and it is that it did not allow us to store references to the `child` and `button` variables. However, the function does take an optional second argument. If you pass an Object as the second argument to this function you can use the `assignTo` properties in your element representation objects and a reference to the element will be assigned as a property on the provided argument with the name you specifty. So, continuing with the above example, if I wanted to keep referneces to the inner div and the button as global variables, I could have done this instead:
+
+```javascript
+var parent = createElement(
+  { tagName: 'div', className: 'container', children: [
+    { tagName: 'div', assignTo: 'child', children: [
+      { tagName: 'button', assignTo: 'button', textContent: 'Click Me' }
     ]}
   ]
 }, window);
 
 ```
-
-As you can see, the bottom solution is less pedantic and it is much easier to glean structural information with a quick glance at the code.
