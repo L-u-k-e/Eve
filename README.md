@@ -8,7 +8,7 @@ This allows you to create your element, assign multiple properties and set multi
 It allows you to craft elements more akin to the way they are crafted in standard HTML. 
 
 
-It turns this ugly mess:
+It turns this:
 
 ```javascript
   var parent = document.createElement('div');
