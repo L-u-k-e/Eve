@@ -1,5 +1,5 @@
 # Eve
-Eve's gift to Earth is a supercharged verison of `createElement()`. 
+Eve's gift to Earth is a supercharged version of `createElement()`. 
 
 Rather than simply taking a tag name, this function takes an object that represents a more complete version of the element you are envisioning. 
 
