@@ -2,8 +2,8 @@ function createElement(hash, context){
   var element;
 
   //create the element
-  if(hash.direct){ element = hash.direct; }
-  else{ element = document.createElement(hash.tagName); }
+  if(hash.direct) element = hash.direct; 
+  else element = document.createElement(hash.tagName); 
 
   //add custom properties
   var properties = Object.getOwnPropertyNames(hash).filter( function(element){ 
@@ -19,7 +19,7 @@ function createElement(hash, context){
   }
 
   //give it a name in the higher context 
-  if(hash.assignTo && context){ context[hash.assignTo] = element }
+  if(hash.assignTo && context) context[hash.assignTo] = element;
 
   //generate and append children
   if(hash.children){
