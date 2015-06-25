@@ -36,7 +36,7 @@ var parent = createElement(
 
 ------
 
-The above example, does not demonstrate everything you can do with this function. As it stands in fact, the function appears to have one disadvantage, which is that it did not allow us to store references to the `child` and `button` variables. However, `createElement()` can take an optional second argument. If you pass an `Object` as the second argument to this function, you can utilize the `assignTo` property, which creates a reference to the created element and stores it as a property on the object you pass as an argument. So, (continuing with the above example) if I wanted to keep references to the inner div and the button as global variables, I could have done this instead:
+The above example does not demonstrate everything you can do with this function. In fact, as it stands, the function appears to have one disadvantage, which is that it did not allow us to store references to the `child` and `button` variables. However, `createElement()` can take an optional second argument. If you pass an `Object` as the second argument to this function, you can utilize the `assignTo` property, which creates a reference to the created element and stores it as a property on the object you pass as an argument. So, (continuing with the above example) if I wanted to keep references to the inner div and the button as global variables, I could have done this instead:
 
 ```javascript
 var parent = createElement(
