@@ -34,3 +34,5 @@ var parent = createElement(
 }, window);
 
 ```
+
+As you can see, the bottom solution is both more terse and provides more structural information at a glance. 
