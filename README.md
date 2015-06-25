@@ -26,7 +26,7 @@ Into this:
 
 ```javascript
 var parent = createElement(
-  tagName: 'div', className: 'container', children: [
+  { tagName: 'div', className: 'container', children: [
     { tagName: 'div', children: [
       { tagName: 'button', textContent: 'Click Me'}
     ]}
