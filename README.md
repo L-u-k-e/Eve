@@ -67,3 +67,7 @@ var parent = createElement(
 
 - *`children [array]`*
  - As previously exemplified, this function supports recursion, so you can add representaions of any children you want your element to come with as elements in this array. (You can nest indefinitely) 
+ 
+------
+
+If this documentation has left you confused, then it is probably best you just view the source, it is much more concise than my pedantic english. ʕ•ᴥ•ʔ
