@@ -25,12 +25,12 @@ It turns this ugly mess:
 Into this:
 
 ```javascript
-var obj = { 
+var parent = createElement(
   tagName: 'div', className: 'container', children: [
     { tagName: 'div', children: [
       { tagName: 'button', textContent: 'Click Me'}
     ]}
   ]
-});
-  var parent = createElement(obj, {});
+}, window);
+
 ```
