@@ -35,4 +35,4 @@ var parent = createElement(
 
 ```
 
-As you can see, the bottom solution is both more terse and provides more structural information at a glance. 
+As you can see, the bottom solution is less pedantic and it is much easier to glean structural information with a quick glance at the code.
