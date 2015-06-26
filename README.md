@@ -51,21 +51,21 @@ var parent = createElement(
 
 -------
 
-Here's the complete list of properties that this function considers special, you must specify either `tagName` or `direct`. The rest are optional.
+Here's the complete list of properties that this function considers special. *At minimum*, you must specify either `tagName` or `direct`. The rest are optional.
 
- - *`tagName [String]`*
+ - **`tagName [String]`**
   - This value is passed as an argument to the vanilla `document.createElement` function.
 
-- *`direct [Element]`*
+- **`direct [Element]`**
  - As an alternative to using the `tagName` property, you can pass in an existing element using this property. If both `direct` and `tagName` are present, then `tagName` will be ignored.
 
-- *`assignTo [String]`*
+- **`assignTo [String]`**
  - As described in the previous section, if this key is utilized and an object is passed in as the second argument to the function, then a refernece to the element that gets created will be assigned as a property of the provided object. (The property name will be the value of this key.) 
 
-- *`attrs [2D array]`*
+- **`attrs [2D array]`**
  - If you need to assign an attribute to the element itself, rather than simply create/modify a property on the object wrapper, than pass the attribute information as an element of the `attrs` array. Use the name of the attribute as the first element of the nested array and use the intended value as the second. See [this stackoverflow question](http://stackoverflow.com/a/6004028/3581485) for a good explanation of the difference between attributes and properties. 
 
-- *`children [array]`*
+- **`children [array]`**
  - As previously exemplified, this function supports recursion, so you can add representaions of any children you want your element to come with as elements in this array. (You can nest indefinitely) 
  
 ------
