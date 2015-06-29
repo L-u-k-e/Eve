@@ -12,11 +12,7 @@ function createElement(hash, context){
   properties.forEach( function(prop){ element[prop] = hash[prop]; } );
 
   //set custom attributes
-  if(hash.attrs){
-    hash.attrs.forEach( function(attr){
-      element.setAttribute(attr[0], attr[1]);
-    });
-  }
+  if(hash.attrs) for(var key in hash.attrs) element.setAttribute(key, hash.attrs[key]);
 
   //give it a name in the higher context
   if(hash.assignTo && context) context[hash.assignTo] = element;
