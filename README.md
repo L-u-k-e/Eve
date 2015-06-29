@@ -63,7 +63,7 @@ Here's the complete list of properties that this function considers special. *At
  - As described in the previous section, if this key is utilized and an object is passed in as the second argument to the function, then a refernece to the element that gets created will be assigned as a property of the provided object. (The property name will be the value of this key.) 
 
 - **`attrs [Object]`**
- - If you need to assign an attribute to the element itself, rather than simply create/modify a property on the object wrapper, than pass the attribute information as a property on the `attrs` object. Use the name of the attribute as the key and use the intended value as the value. See [this stackoverflow question](http://stackoverflow.com/a/6004028/3581485) for a good explanation of the difference between attributes and properties. 
+ - If you need to assign an attribute to the element itself, rather than simply create/modify a property on the object wrapper, then pass the attribute information as a property on the `attrs` object. Use the name of the attribute as the key and use the intended value as the value. See [this stackoverflow question](http://stackoverflow.com/a/6004028/3581485) for a good explanation of the difference between attributes and properties. 
 
 - **`children [array]`**
  - As previously exemplified, this function supports recursion, so you can add representaions of any children you want your element to come with as elements in this array. (You can nest indefinitely) 
